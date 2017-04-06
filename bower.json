@@ -1,0 +1,21 @@
+{
+  "name": "bfstrings",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "timothyfranzke"
+  ],
+  "license": "MIT",
+  "homepage": "www.bfstrings.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.4.2"
+  }
+}

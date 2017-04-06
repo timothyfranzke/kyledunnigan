@@ -1,0 +1,90 @@
+body {
+    margin-top: 20px;
+    background-image: url(Images/backgroundRepeat.jpg);
+    background-attachment: fixed;
+    font-size: 16px;
+    height:100%;
+}
+body a {
+    color: black;
+}
+#wrapper{
+    height:2000px;
+}
+.body-content {
+    background-image: url(Images/wrapperBackground2.png);
+}
+.modal-content{
+    border-radius: 0px;
+}
+
+#BioPic {
+    background-image: url(Images/Bioimg.png);
+    width: 228px;
+    height: 290px;
+    float: left;
+}
+.navbar {
+    background-color: transparent;
+    font-family: 'Monda', sans-serif;
+    background-image: url(Images/navBarBG.png);
+    background-repeat: repeat;
+    border-bottom: transparent;
+}
+.navbar-nav {
+    text-decoration: white;
+}
+#putTheWidgetHere {
+    background-image: url(Images/PBbg.jpg);
+}
+.navbar-collapse .navbar-nav > li > a {
+    color: black;
+}
+.navbar-collapse .navbar-nav > li > a:hover,
+.navbar-collapse .navbar-nav > li > a:focus {
+    color: #f4a460;
+}
+
+textarea {
+    max-width: 10000px;
+}
+.navbar-nav li a:link {
+    color: black;
+    font-family: 'Averia Libre', cursive;
+    font-size: 18px;
+}
+
+.navbar-nav li a:hover {
+    font-family: 'Averia Libre', cursive;
+    font-size: 18px;
+    text-decoration: orange;
+}
+a:link {
+    color: black;
+}
+a:hover {
+    color: orange;
+}
+h2 {
+    font-family: 'Averia Libre', cursive;
+}
+
+.facebook {
+    background-color: #EFF6C2;
+}
+
+.shows {
+    background-color: #f4a460;
+}
+
+
+.greenBg, .modal-body, .modal-header, .modal-footer{
+    background-color: #DBEA83;
+    border: none;
+}
+#logo {
+    background-image: url(Images/onTopLogo.png);
+    background-repeat: no-repeat;
+    height: 61px;
+    width: 191px;
+}

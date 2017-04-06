@@ -1,0 +1,35 @@
+<script src="lib/jQuery.js"></script>
+<script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+<div class="row">
+    <div class="col-lg-8">
+        <iframe src="https://www.youtube-nocookie.com/embed/VfdK5ZXd4tM" width="100%" height="500" seamless="false"></iframe>
+    </div>
+    <div class="col-lg-4 hidden-xs">
+        <a class="twitter-timeline" href="https://twitter.com/kyledunnigan" data-widget-id="414950904056393728">Tweets by @kyledunnigan</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6 facebook hidden-xs">
+        <h2>Leave Me Comments</h2>
+        <div class="fb-like" data-href="http://www.kyledunnigancomedy.com" data-send="true" data-width="340" data-show-faces="true"></div>
+        <div class="fb-comments" data-href="http://www.kyledunnigancomedy.com" data-num-posts="5" data-width="auto" order_by="reverse_time"></div>
+
+    </div>
+    <div class="col-lg-offset-1 col-lg-5 shows">
+        <h2>Come See Me</h2>
+        <table class="table table-condensed">
+            <tr>
+                <th><h4>When</h4></th>
+                <th><h4>Where</h4></th>
+                <th></th>
+            </tr>
+            <tr ng-repeat="event in events track by $index | limitTo:3">
+                <td>{{event.date | date : "MMM dd"}} @ {{event.start_time}}</td>
+                <td><a ng-href="{{event.url}}" target="_blank">{{event.venue}}</a></td>
+                <td>{{event.city}}, {{event.state}}</td>
+            </tr>
+            <tr ng-show="events.length > 3"><a ui-sref="live">More Dates</a> </tr>
+        </table>
+    </div>
+</div>
